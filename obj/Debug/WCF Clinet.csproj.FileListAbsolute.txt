@@ -1,0 +1,10 @@
+D:\Project\WCF Clinet\obj\Debug\WCF Clinet.csprojAssemblyReference.cache
+D:\Project\WCF Clinet\obj\Debug\WCF_Clinet.Properties.Resources.resources
+D:\Project\WCF Clinet\obj\Debug\WCF Clinet.csproj.GenerateResource.cache
+D:\Project\WCF Clinet\obj\Debug\WCF Clinet.csproj.CoreCompileInputs.cache
+D:\Project\WCF Clinet\bin\Debug\WCF Clinet.exe.config
+D:\Project\WCF Clinet\bin\Debug\WCF Clinet.exe
+D:\Project\WCF Clinet\bin\Debug\WCF Clinet.pdb
+D:\Project\WCF Clinet\obj\Debug\WCF_Clinet.MainForm.resources
+D:\Project\WCF Clinet\obj\Debug\WCF Clinet.exe
+D:\Project\WCF Clinet\obj\Debug\WCF Clinet.pdb
