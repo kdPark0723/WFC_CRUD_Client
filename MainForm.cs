@@ -30,36 +30,68 @@ namespace WCF_Clinet
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Database link fail!");
+                MessageBox.Show(ex.Message);
                 this.Close();
             }
         }
 
         private void ReadButton_Click(object sender, EventArgs e)
         {
-            SyncData();
+            try
+            {
+                SyncData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                this.Close();
+            }
         }
 
         private void CreateButton_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.CurrentCellAddress.Y >= 0)
-                dataAccessor.InsertData(GetColNames(), GetSelectColData());
+            try
+            {
+                if (dataGridView1.CurrentCellAddress.Y >= 0)
+                    dataAccessor.InsertData(GetColNames(), GetSelectColData());
 
-            SyncData();
+                SyncData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                this.Close();
+            }
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            dataAccessor.UpdateData(GetSelectColNamesAndData(), GetSelectPrimaryKeyColNamesAndData());
+            try
+            {
+                dataAccessor.UpdateData(GetSelectColNamesAndData(), GetSelectPrimaryKeyColNamesAndData());
 
-            SyncData();
+                SyncData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                this.Close();
+            }
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            dataAccessor.DeleteData(GetSelectPrimaryKeyColNamesAndData());
+            try
+            {
+                dataAccessor.DeleteData(GetSelectPrimaryKeyColNamesAndData());
 
-            SyncData();
+                SyncData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                this.Close();
+            }
         }
 
         private void SyncData()
